@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_NewLayout</title>
+</head>
+<body>
+    <div>
+        <header style="height:100px; background-color:pink;">
+            <h2>this is header</h2>
+        </header>
+
+        @* different kind of pages will appear here *@
+        <div class="container body-content">
+            @RenderBody()  @*all the dynamic pages will apear here*@
+            <hr />
+
+        </div>
+        <footer style="height:200px; background-color:green; color:white;">
+            <h2>this is footer</h2>
+            <p>@DateTime.Now</p>
+        </footer>
+
+    </div>
+</body>
+</html>
